@@ -9,5 +9,7 @@ $(document).ready(function() {
 });
 socket.on('chat message', function(msg) {
   console.log(msg);
-  $('#messages').append($('<li>').text(msg));
+  var now = new Date();
+  var timestring = now.getHours() + ':' + now.getMinutes();
+  $('#messages').append($('<li>').text('< ' + timestring + ' > ' + msg));
 });
