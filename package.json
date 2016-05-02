@@ -1,0 +1,14 @@
+{
+  "name": "cheeky",
+  "version": "0.0.1",
+  "description": "im app with sms",
+  "author": "sheri zada",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sherzader/cheeky"
+  },
+  "dependencies": {
+
+  }
+}
