@@ -3,15 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Cheeky</title>
-    <link href="./style.css" rel="stylesheet" type="text/css"></link>
+    <link href="style.css" rel="stylesheet" type="text/css"></link>
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="chat.js"></script>
+    <script src="chat_client.js"></script>
   </head>
   <body>
-      <ul id="messages"></ul>
+    <div class="container">
+      <aside class="">
+        <input id="name" placeholder="Create new user" autocomplete="off" /><button>Create</button>
+        <h2>Chat Rooms</h2>
+      </aside>
+      <ul id="messages"><h2>Messages</h2></ul>
       <form action="">
         <input id="m" autocomplete="off" /><button>Send</button>
       </form>
+    </div>
   </body>
 </html>

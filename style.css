@@ -10,13 +10,19 @@ form {
   width: 100%;
 }
 
-form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
-form button { width: 5%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+form input { border: 0; padding: 10px; width: 80%; margin-right: .5%; }
+form button {
+  width: 10%;
+  background: rgb(130, 224, 255);
+  border: none;
+  padding: 10px;
+}
 
 #messages {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 500px;
 }
 
 #messages li {
@@ -25,4 +31,13 @@ form button { width: 5%; background: rgb(130, 224, 255); border: none; padding: 
 
 #messages li:nth-child(odd) {
   background: #eee;
+}
+
+aside {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
 }
