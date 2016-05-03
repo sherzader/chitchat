@@ -21,6 +21,9 @@ http.listen(3000, function(){
 });
 
 io.on('connection', function(socket) {
+  people[socket.id] = 'guest' + Math.ceil(Math.random() * 10);
+  io.emit('update', people[socket.id] + ' has joined the server.');
+  io.emit('update-people', people);
   socket.on('join', function(name) {
     people[socket.id] = name;
     io.emit('update', 'You have connected to the server.');
