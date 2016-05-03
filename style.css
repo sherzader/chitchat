@@ -16,13 +16,14 @@ form#msg button {
   background: rgb(130, 224, 255);
   border: none;
   padding: 10px;
+  font-size: 14px;
 }
 
 #messages {
   list-style: none;
   margin: 0 auto;
   padding: 0;
-  width: 500px;
+  width: 700px;
 }
 
 #messages li {
@@ -40,4 +41,20 @@ aside {
 
 .container {
   display: flex;
+}
+
+#name_change input {
+  padding: 7px;
+  font-size: 12px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 200px;
+}
+
+#name_change button {
+  padding: 10px;
+  border: medium none;
+  background-color: aquamarine;
+  font-size: 12px;
 }
