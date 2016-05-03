@@ -37,6 +37,7 @@ form#msg button {
 aside {
   padding: 0;
   margin: 0;
+  margin-left: 20px;
 }
 
 .container {
@@ -58,3 +59,16 @@ aside {
   background-color: aquamarine;
   font-size: 12px;
 }
+
+ul {
+  overflow: scroll;
+  margin-bottom: 100px;
+}
+
+/*.banner {
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 150px;
+  background: url('http://3.bp.blogspot.com/-1Ve_DSl5ACI/U9k99iLaNbI/AAAAAAAABAg/Ij38CT9lAuQ/s1600/emoji3-550x240.png')
+}*/

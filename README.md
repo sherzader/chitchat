@@ -6,7 +6,7 @@
 - List updates when a user arrives/leaves
 - Messages have timestamps
 
-###Setup:###
+###Setup###
 1. Download .zip
 2. cd to /cheekyim
 3. at your command line `$` run `node server.js`
