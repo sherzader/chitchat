@@ -3,9 +3,8 @@ var app = express();
 app.use('/', express.static(__dirname + '/'));
 var http = require('http');
 var server = http.createServer(app);
-var io = require('socket.io').listen(server);
-
 server.listen(process.env.PORT || 8000);
+var io = require('socket.io').listen(server);
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');

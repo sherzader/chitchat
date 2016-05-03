@@ -1,4 +1,4 @@
-var socket = io.connect(window.location.origin);
+var socket = io.connect(window.location.hostname);
 
 $(document).ready(function() {
   $('form#msg').submit(function(e) {
