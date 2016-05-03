@@ -11,11 +11,14 @@
   <body>
     <div class="container">
       <aside class="">
-        <input id="name" placeholder="Create new user" autocomplete="off" /><button>Create</button>
-        <h2>Chat Rooms</h2>
+        <form id="name_change">
+          <input id="name" placeholder="Create new user" autocomplete="off" /><button>Create</button>
+        </form>
+        <h2>People</h2>
+        <div id="people"></div>
       </aside>
       <ul id="messages"><h2>Messages</h2></ul>
-      <form action="">
+      <form id="msg">
         <input id="m" autocomplete="off" /><button>Send</button>
       </form>
     </div>
