@@ -1,18 +1,18 @@
 var express = require('express');
 var app = express();
 app.use('/', express.static(__dirname + '/'));
-var http_server = require('http').Server(app);
-var io = require('socket.io').listen(http_server);
+var server = require('http').Server(app);
+var io = require('socket.io').listen(server);
 
-var people = {};
+server.listen(process.env.PORT || 8000);
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-http_server.listen(process.env.PORT || 3000);
+var people = {};
 
-io.sockets.on('connection', function(socket) {
+io.on('connection', function(socket) {
   people[socket.id] = 'guest' + Math.ceil(Math.random() * 10);
   io.emit('update', people[socket.id] + ' has joined.');
   io.emit('update-people', people);
