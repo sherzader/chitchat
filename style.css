@@ -24,6 +24,7 @@ form#msg button {
   margin: 0 auto;
   padding: 0;
   width: 700px;
+  margin-bottom: 50px;
 }
 
 #messages li {
@@ -58,11 +59,6 @@ aside {
   border: medium none;
   background-color: aquamarine;
   font-size: 12px;
-}
-
-ul {
-  overflow: scroll;
-  margin-bottom: 100px;
 }
 
 /*.banner {
