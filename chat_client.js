@@ -1,4 +1,10 @@
-var socket = io.connect(window.location.hostname);
+var socket;
+
+if (window.location.hostname != 'localhost') {
+  socket = io.connect(window.location.hostname);
+} else {
+  socket = io.connect();
+}
 
 $(document).ready(function() {
   $('form#msg').submit(function(e) {

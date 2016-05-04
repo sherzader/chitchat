@@ -4,23 +4,29 @@
     <meta charset="utf-8">
     <title>ChitChat</title>
     <link href="style.css" rel="stylesheet" type="text/css"></link>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
-    <script src="chat_client.js"></script>
+    <!-- <script src="//twemoji.maxcdn.com/twemoji.min.js"></script> -->
   </head>
   <body>
     <div class="container">
       <aside class="">
         <form id="name_change">
-          <input id="name" placeholder="Create new user" autocomplete="off" /><button>Create</button>
+          <input id="name" placeholder="Update username" autocomplete="off" /><button>Submit</button>
         </form>
-        <h2>People</h2>
+        <h2>People Online</h2><hr>
         <div id="people"></div>
       </aside>
-      <ul id="messages"><h2>Messages</h2></ul>
+      <ul id="messages"><h2>Messages</h2><hr></ul>
       <form id="msg">
-        <input id="m" autocomplete="off" /><button>Send</button>
+        <input id="m" autocomplete="off" placeholder="Send a message..."/><button>Send</button>
       </form>
+      <div id="rooms">
+        <h2>Chat Rooms</h2><hr>
+        <h3 id="main">Main</h3>
+        <h3><i>Under construction</i></h3>
+      </div>
     </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="chat_client.js"></script>
   </body>
 </html>

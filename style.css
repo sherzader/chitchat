@@ -1,6 +1,9 @@
 * { margin: 0, padding: 0, box-sizing: border-box; }
 
-body { font: 13px Helvetica, Arial; }
+body {
+  font: 13px Helvetica, Arial;
+  background-color: azure;
+}
 form#msg {
   left: 0;
   background: #000;
@@ -22,9 +25,15 @@ form#msg button {
 #messages {
   list-style: none;
   margin: 0 auto;
-  padding: 0;
-  width: 700px;
+  /*! padding: 0; */
+  width: 680px;
   margin-bottom: 50px;
+  position: fixed;
+  left: 330px;
+  padding: 20px 30px;
+  height: 1000px;
+  background-color: #cccce5;
+  top:  0;
 }
 
 #messages li {
@@ -38,7 +47,14 @@ form#msg button {
 aside {
   padding: 0;
   margin: 0;
-  margin-left: 20px;
+  /*! margin-left: 20px; */
+  background-color: #b2b2d8;
+  padding: 30px;
+  top: 0;
+  position: fixed;
+  left: 0;
+  /*! vertical-align: top; */
+  height: 1000px;
 }
 
 .container {
@@ -59,6 +75,12 @@ aside {
   border: medium none;
   background-color: aquamarine;
   font-size: 12px;
+}
+
+#rooms {
+  position: fixed;
+  left: 1100px;
+  padding: 11px;
 }
 
 /*.banner {
