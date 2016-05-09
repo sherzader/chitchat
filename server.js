@@ -13,6 +13,7 @@ app.get('/', function(req, res){
 var people = {};
 
 io.on('connection', function(socket) {
+  console.log('server is listening');
   people[socket.id] = 'guest' + Math.ceil(Math.random() * 10);
   io.emit('update', people[socket.id] + ' has joined.');
   io.emit('update-people', people);

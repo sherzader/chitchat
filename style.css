@@ -6,20 +6,30 @@ body {
 }
 form#msg {
   left: 0;
-  background: #000;
+  background: aqua;
   padding: 3px;
   position: fixed;
   bottom: 0;
   width: 100%;
+  display: inline-flex;
 }
 
-form#msg input { border: 0; padding: 10px; width: 80%; margin-right: .5%; }
+form#msg input {
+  padding: 8px 10px;
+  width: 70%;
+  margin: 5px;
+  font-size: 20px;
+}
 form#msg button {
-  width: 10%;
-  background: rgb(130, 224, 255);
-  border: none;
-  padding: 10px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px aliceblue solid;
+  margin-left: 10px;
+  background-color: paleturquoise;
+}
+
+form#msg button:hover {
+  transform: scale(1.15);
 }
 
 #messages {
@@ -44,6 +54,10 @@ form#msg button {
   background: #eee;
 }
 
+#messages li:nth-child(even) {
+  background-color: #ddd;
+}
+
 aside {
   padding: 0;
   margin: 0;
@@ -62,16 +76,13 @@ aside {
 }
 
 #name_change input {
-  padding: 7px;
-  font-size: 12px;
-  border-right: none;
-  border-left: none;
-  border-top: none;
+  padding: 9px;
+  font-size: 13px;
   width: 200px;
 }
 
 #name_change button {
-  padding: 10px;
+  padding: 11px;
   border: medium none;
   background-color: aquamarine;
   font-size: 12px;
@@ -90,3 +101,8 @@ aside {
   height: 150px;
   background: url('http://3.bp.blogspot.com/-1Ve_DSl5ACI/U9k99iLaNbI/AAAAAAAABAg/Ij38CT9lAuQ/s1600/emoji3-550x240.png')
 }*/
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
